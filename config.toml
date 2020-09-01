@@ -1,0 +1,54 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Toha"
+theme = "toha"
+googleAnalytics = "UA-XXXXXXXXX-X"
+disqusShortname = "does-not-exist"
+enableEmoji = true
+
+[markup]
+
+  [markup.goldmark]
+
+    [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.tableOfContents]
+  startLevel = 2.0
+  endLevel = 6.0
+  ordered = false
+
+[params]
+copyright = "© 2020 Copyright."
+description = "Portfolio and personal blog of Jane Doe."
+background = "images/background.jpg"
+gitRepo = "https://github.com/hossainemruz/toha-example-site"
+enableBlogPost = true
+enableTOC = true
+
+  [params.logo]
+  main = "/assets/images/main-logo.png"
+  inverted = "/assets/images/inverted-logo.png"
+  favicon = "/assets/images/favicon.png"
+
+  [params.newsletter]
+  enable = true
+
+  [params.author]
+  name = "Jane Doe"
+  nickname = "Jane"
+  image = "images/avatar.png"
+  greeting = "Hi, I am"
+  summary = [
+    "I am a Developer",
+    "I work with Go",
+    "I love to work with some fun projects"
+  ]
+
+    [params.author.contactInfo]
+    email = "janedoe@example.com"
+    phone = "+0123456789"
+
+  [[params.customMenus]]
+  name = "Notes"
+  url = "https://hossainnotes.netlify.app/docs/example/"
